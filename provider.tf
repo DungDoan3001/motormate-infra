@@ -5,6 +5,6 @@ provider "azurerm" {
     }
   }
 
-  subscription_id = local.subcription_id
-  tenant_id       = local.tentant_id
+  # subscription_id = local.subcription_id
+  # tenant_id       = local.tentant_id
 }
