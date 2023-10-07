@@ -1,6 +1,6 @@
 # || Motormate Infrastructure - Frontend || #
 module "web_app_essentials_frontend" {
-  source = "../applications/web-app-essentials"
+  source = "./applications/web-app-essentials"
 
   app_type = local.frontend_prefix
   location = local.frontend_location
@@ -30,7 +30,7 @@ resource "azurerm_linux_web_app" "web_app_frontend" {
 
 # || Motormate Infrastructure - Backend || #
 module "web_app_essentials_backend" {
-  source = "../applications/web-app-essentials"
+  source = "./applications/web-app-essentials"
 
   app_type = local.backend_prefix
   location = local.backend_location
