@@ -1,4 +1,6 @@
 provider "azurerm" {
+  use_oidc = true
+  use_cli  = false
   features {
     resource_group {
       prevent_deletion_if_contains_resources = false
